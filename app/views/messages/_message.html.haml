@@ -1,0 +1,19 @@
+.message
+  .message__content
+    %p 
+      = simple_format(partial_message.messages)
+
+  .message__btn-wrapper-1
+    .message__btn-wrapper-1__show-btn
+      = link_to 'SHOW', "/messages/#{partial_message.id}", method: :get, class: "show-link"
+    - if user_signed_in? && current_user.id == partial_message.user_id
+      .message__btn-wrapper-1__edit-btn-1
+        = link_to 'EDIT', "/messages/#{partial_message.id}/edit", method: :get, class: "edit-link-1"
+      .message__btn-wrapper-1__destroy-btn-1
+        = link_to 'DESTROY', "/messages/#{partial_message.id}", method: :delete, class: "destroy-link-1"
+    - else
+      .message__btn-wrapper-1__edit-btn-2
+      .message__btn-wrapper-1__destroy-btn-2
+
+
+

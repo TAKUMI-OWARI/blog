@@ -1,0 +1,14 @@
+= render partial: "messages/header"
+%h2.title Sign in
+%div.signin
+  = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+    %p.email
+      = f.label :email
+      = f.email_field :email
+    %p.password 
+      = f.label :password
+      = f.password_field :password
+    %p.signin-submit
+      = f.submit "Sign in"
+    %a{type: "button", href: "/", class: "btn6"}
+      Back

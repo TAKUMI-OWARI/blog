@@ -1,0 +1,7 @@
+= render partial: "header"
+.main-content
+  - @messages.each do |message| 
+    = render partial: "message", locals: { partial_message: message }
+  .main-content__page
+    = paginate(@messages)
+

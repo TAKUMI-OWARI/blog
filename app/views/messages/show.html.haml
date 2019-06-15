@@ -1,0 +1,5 @@
+= render partial: "header"
+.show
+  = simple_format(@message.messages)
+%a{type: "button", href: "/", class: "btn1"}
+  Back

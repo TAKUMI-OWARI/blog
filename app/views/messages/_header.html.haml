@@ -1,0 +1,15 @@
+.header
+  .header__title
+    Blog
+  -if user_signed_in?
+    .header__wrapper1
+      .header__wrapper1__signout
+        = link_to "Sign Out", destroy_user_session_path, method: :delete, class: "signout-link"
+      .header__wrapper1__new
+        = link_to "New", messages_new_path, method: :get, class: "new-link"
+  -else
+    .header__wrapper2
+      .header__wrapper2__signin
+        = link_to "Sign In", new_user_session_path, method: :get, class: "signin-link"
+      .header__wrapper2__signup
+        = link_to "Sign Up", new_user_registration_path, method: :get, class: "signup-link"

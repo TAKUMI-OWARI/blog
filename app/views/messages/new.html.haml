@@ -1,0 +1,8 @@
+= render partial: "messages/header"
+%h2.new-post-title　New Post
+.new-post
+  = form_for(@message, url: '/messages/create', method: :post) do |f|
+    = f.text_area :messages, cols: "50", rows: "10", placeholder: "Enter message"
+    = f.submit "Create Post", class: 'create-post'
+  %a{type: "button", href: "/", class: "btn5"}
+    Back

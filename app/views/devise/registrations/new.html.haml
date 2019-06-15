@@ -1,0 +1,17 @@
+= render partial: "messages/header"
+%h2.title Sign up 
+%div
+  = form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
+    .email
+      = f.label :email
+      = f.email_field :email
+    .password 
+      = f.label :password
+      = f.password_field :password
+    .password-confirmation
+      = f.label :password_confirmation, "Confirmation"
+      = f.password_field :password_confirmation
+    .signout-submit
+      = f.submit "Create Account"
+    %a{type: "button", href: "/", class: "btn2"}
+      Back

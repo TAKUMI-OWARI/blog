@@ -1,0 +1,8 @@
+= render partial: "header"
+%h2.title Edit
+.edit
+  = form_for(@message, url: "/messages/#{@message.id}", method: :patch) do |f|
+    = f.text_area :messages, cols: "50", rows: "10"
+    %input{type: "submit", value: "SENT", class: "submit"}
+%a{type: "button", href: "/", class: "btn2"}
+  Back
