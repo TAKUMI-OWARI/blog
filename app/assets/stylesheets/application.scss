@@ -1,0 +1,14 @@
+@import "./reset";
+@import "./colors";
+@import "./main";
+@import "./header";
+@import "./message";
+@import "./new-post";
+@import "./show-edit-destroy-update";
+@import "./signin-signup";
+
+.pagination>li>a {          
+  border: none;     
+  color: $light-blue;
+  font-size: 17px;
+}

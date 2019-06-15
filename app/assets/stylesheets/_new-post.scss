@@ -1,0 +1,25 @@
+.new-post-title {
+  float: left;
+  margin-left: 46.5%;
+  font-size: 20px;
+  padding: 10px 0;
+}
+.new-post {
+  position: relative;
+  float: left;
+  margin-left: 35vw;
+}
+.create-post {
+  position: absolute;
+  top: 215px;
+  left: 36%;
+  background-color: $light-blue;
+  color: $white;
+  padding: 0 10px;
+}
+.btn5 {
+  position: relative;
+  top: 50px;
+  left: 160px;
+  font-size: 16px;
+}

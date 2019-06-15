@@ -1,0 +1,71 @@
+.header {
+  position: relative;
+  background-color: $light-blue;
+  color: $white;
+  font-size: 30px;
+  height: 80px;
+  width: 100%;
+  //text-align: center;
+
+  &__title {
+    float: left;
+    margin-left: 50vw;
+    line-height: 80px;
+  }
+  &__wrapper1 {
+    float: right;
+    margin-right: 30px;
+    line-height: 80px;
+    &__signout {
+      float: left;
+      margin-right: 10px;
+      border-width: 1px;
+      font-size: 16px;
+      .signout-link {
+        text-decoration: none;
+        color: $white;
+      }      
+    }
+    &__new {
+      float: left;
+      margin-left: 10px;
+      border-width: 1px;
+      font-size: 16px;   
+      .new-link {
+        text-decoration: none;
+        color: $white;
+      }   
+    }
+  }
+  
+  &__wrapper2 {
+    float: right;
+    margin-right: 30px;
+    line-height: 80px;
+    //height: 80px;
+    //width: 150px;
+    //background-color: yellow;    
+    &__signin {
+      float: left;
+      margin-right: 10px;
+      border-width: 1px;
+      font-size: 16px;
+      .signin-link {
+        text-decoration: none;
+        color: $white;
+      }   
+    }
+    &__signup {
+      float: left;
+      margin-left: 10px;
+      border-width: 1px;
+      font-size: 16px;
+      .signup-link {
+        text-decoration: none;
+        color: $white;
+      }   
+    }
+
+  }
+
+}

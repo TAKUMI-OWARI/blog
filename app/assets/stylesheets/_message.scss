@@ -1,0 +1,66 @@
+.message {
+  position: relative;
+  margin: 0 auto;
+  margin-top: 20px;
+  height: 240px;
+  width: 70vw;
+  background-color: $white;
+  border: 1px solid #333;
+  border-radius: 20px 20px 20px 20px;
+  box-shadow: 0 0 10px $light-gray;
+  &__content {
+    position: absolute;
+    top: 10px;
+    left: 5vw;
+    height: 180px;
+    width: 60vw;
+    font-size: 14px;
+    overflow: hidden;
+    p {
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 9;
+    }
+  }
+
+  &__btn-wrapper-1 {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    width: 260px;
+    height: 30px;
+    @mixin btn-content-1 {
+      float: left;
+      color: $white;
+      background-color: $light-blue;
+      height: 30px;
+      border-width: 2px;
+      text-align: center;
+      line-height: 30px;
+      padding: 0 10px;
+      border-radius: 5px 5px 5px 5px;
+    }
+    &__show-btn {
+      @include btn-content-1;
+      .show-link {
+        text-decoration: none;
+        color: $white;
+      }
+    }
+    &__edit-btn-1 {
+      @include btn-content-1;
+      margin: 0 10px;
+      .edit-link-1 {
+        text-decoration: none;
+        color: $white;
+      }
+    }
+    &__destroy-btn-1 {
+      @include btn-content-1;
+      .destroy-link-1 {
+        text-decoration: none;
+        color: $white;
+      }
+    }
+  }
+}
